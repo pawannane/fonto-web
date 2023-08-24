@@ -1,0 +1,712 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 92.5%;
+  margin: 0 auto;
+}
+/*=================================
+  Header styling starts here
+=================================*/
+header {
+  padding-bottom: 606px;
+  background: url("https://dummyimage.com/1350x606/000000/5a5a66");
+  background-size: cover;
+  color: #ebebeb;
+}
+
+header .wrapper {
+  padding: 31px 0;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo > a {
+  color: #fff;
+  font-size: 37px;
+}
+
+.logo > a:hover {
+  color: #bd4c36;
+}
+
+.header-nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.header-nav a {
+  color: #e9e9e9;
+  font-weight: 600;
+}
+
+.dropdown-container a {
+  display: flex;
+  align-items: center;
+}
+.dropdown-container a::before {
+  color: #e9e9e9;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.dropdown::before {
+  content: "\f107";
+  padding-right: 10px;
+  font-size: 8px;
+}
+
+.dropdown-container a:hover::before {
+  color: #bd4c36;
+}
+
+.cart-search {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cart-search a {
+  text-indent: -9999px;
+}
+.cart-search a::before {
+  color: #fff;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.shop::before {
+  content: "\f290";
+  font-size: 32px;
+}
+
+.search::before {
+  content: "\f002";
+  font-size: 16px;
+}
+
+.header-nav a:hover,
+.dropdown-container span:hover::before,
+.cart-search a:hover::before {
+  color: #bd4c36;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/*=================================
+  Fresh New Designs section styling starts here
+=================================*/
+.fresh-new-designs-container {
+  padding: 88px 0 175px;
+  background-color: #a6b4bb;
+  text-align: center;
+}
+
+.heading-two {
+  color: #1f1f1f;
+  font-size: 39px;
+}
+
+.img-container {
+  margin-top: 80px;
+  display: flex;
+  gap: 3.21%;
+}
+
+.img-container-col-1 > ul,
+.img-container-col-2 > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img-container-col-1 img,
+.img-container-col-2 img {
+  border: 10px solid #fff;
+  box-shadow: 6px 4px #95a1a8;
+}
+/*=================================
+  Fresh New Designs section styling ends here
+=================================*/
+
+/*=================================
+  Reviews Section styling starts here
+=================================*/
+.reviews-container {
+  padding: 38px 0;
+  background-color: #1f1f1f;
+  color: #ebeae6;
+}
+
+.reviews-container-top {
+  display: flex;
+  gap: 5.75%;
+}
+
+.icon-container a {
+  text-indent: -9999px;
+}
+.icon-container a::before {
+  color: #000;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.double-quotes::before {
+  content: "\f10e";
+  font-size: 66px;
+}
+
+.review-detail {
+  font-size: 32px;
+}
+
+.reviewer-details {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+}
+
+.profile-email {
+  color: #bd4c36;
+}
+
+.profile-email:hover {
+  color: #fff;
+}
+
+.reviews-container-bottom {
+  padding-left: 10.5%;
+  display: flex;
+  gap: 29%;
+}
+
+.left-right-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.left-right-icons a {
+  text-indent: -9999px;
+  padding: 10px;
+  border: 1px solid #bd4c36;
+}
+
+.left-right-icons a::before {
+  color: #bd4c36;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.left::before {
+  content: "\f100";
+  font-size: 10px;
+}
+
+.right::before {
+  content: "\f101";
+  font-size: 10px;
+}
+
+.left-right-icons a:hover::before {
+  color: #fff;
+}
+
+.slider-container {
+  display: flex;
+  gap: 10px;
+}
+
+.slider-container a {
+  text-indent: -9999px;
+  border: 1px solid #bd4c36;
+  border-radius: 50%;
+}
+
+.slider-container a::before {
+  color: #1f1f1f;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+.slider-container a:hover::before {
+  color: #bd4c36;
+}
+
+.slider::before {
+  content: "\f111";
+  font-size: 10px;
+}
+
+.active a::before {
+  color: #bd4c36;
+}
+/*=================================
+  Reviews section styling ends here
+=================================*/
+
+/*=================================
+  author section styling ends here
+=================================*/
+.authors-container {
+  padding: 110px 0;
+  background-color: #a6b4bb;
+  text-align: center;
+}
+
+.authors-description {
+  margin-top: 90px;
+  display: flex;
+  gap: 4.5%;
+}
+
+.authors-description img {
+  border-radius: 50%;
+}
+
+.author {
+  margin-top: 15px;
+  color: #56515b;
+}
+
+.designation {
+  margin-top: 10px;
+  color: #e2e4dd;
+}
+/*=================================
+  author section styling ends here
+=================================*/
+
+/*=================================
+  design section styling starts here
+=================================*/
+.designs-container {
+  padding: 42px 0 144px;
+  background-color: #a6b4bb;
+  text-align: center;
+}
+
+.card-container {
+  margin-top: 120px;
+  display: flex;
+  gap: 2.75%;
+}
+
+.card-container > li {
+  box-shadow: 8px 7px #95a1a8;
+}
+
+.sale-container {
+  display: flex;
+  gap: 5px;
+}
+
+.sale > li {
+  color: #789eb6;
+  text-decoration: line-through;
+}
+
+.product-details {
+  padding: 28px 0 35px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ebebeb;
+}
+
+.product-name {
+  font-weight: 600;
+}
+
+.product-price {
+  margin-top: 22px;
+  color: #eb7b7b;
+}
+
+.product-price a {
+  text-indent: -9999px;
+}
+
+.product-price a::before {
+  color: #eb7b7b;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.euro::before {
+  content: "\f153";
+  font-size: 13px;
+}
+
+.out-of-stock {
+  margin-top: 22px;
+  text-transform: uppercase;
+}
+
+.stock-card,
+.sale-card {
+  position: relative;
+}
+
+.stock-badge,
+.sale-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.stock-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -8%;
+  top: -5%;
+  background-color: #5f8ca9;
+}
+
+.sale-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -8%;
+  top: -5%;
+  background-color: #eb7777;
+}
+/*=================================
+  design section styling ends here
+=================================*/
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+footer {
+  padding-top: 68px;
+  background-color: #1f1f1f;
+  color: #e3eaeb;
+}
+
+.footer-top ul {
+  display: flex;
+  gap: 22%;
+}
+
+.heading-four {
+  min-width: max-content;
+  color: #ebebeb;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-details,
+.sponsors-img-container {
+  margin-top: 27px;
+}
+
+.about-details {
+  min-width: 26%;
+}
+
+.sponsors-img-container > img {
+  width: 250px;
+  border: 1px solid #fff;
+  border-top: none;
+}
+
+.footer-bottom {
+  margin-top: 123px;
+  padding: 4px 3.75%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.social-links {
+  display: flex;
+  gap: 35%;
+}
+
+.social-links a {
+  text-indent: -9999px;
+}
+
+.social-links a::before {
+  color: #a6b4bb;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.facebook::before {
+  content: "\f39e";
+  font-size: 17px;
+}
+
+.twitter::before {
+  content: "\f099";
+  font-size: 17px;
+}
+
+.vimeo::before {
+  content: "\f40a";
+  font-size: 17px;
+}
+
+.instagram::before {
+  content: "\f16d";
+  font-size: 17px;
+}
+
+.social-links a:hover::before {
+  color: #fff;
+}
+
+.privacy-terms-container a {
+  color: #677b75;
+  font-size: 12px;
+}
+
+.privacy {
+  padding: 0 8px;
+}
+
+.terms {
+  padding: 0 8px;
+  border-left: 1px solid #fff;
+}
+
+.privacy:hover,
+.terms:hover {
+  color: #fff;
+}
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+}
